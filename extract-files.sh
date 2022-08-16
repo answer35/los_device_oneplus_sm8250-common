@@ -123,8 +123,8 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${SIGSCAN}" -p "23 0A 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
-        *)
-            return 1
+        vendor/lib64/libAncSegBaseSdk.so|vendor/lib64/libaps_frame_registration.so|vendor/lib64/libyuv2.so)
+            "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
     esac
 
