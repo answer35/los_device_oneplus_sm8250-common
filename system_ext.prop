@@ -10,6 +10,7 @@ persist.bluetooth.bqr.min_interval_ms=60000
 # Display
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
+ro.sf.use_latest_hwc_vsync_period=0
 
 # CNE
 persist.vendor.cne.feature=1
