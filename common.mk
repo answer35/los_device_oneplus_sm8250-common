@@ -159,7 +159,7 @@ PRODUCT_COPY_FILES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    OplusDoze
+    ParanoidDoze
 
 # DRM
 PRODUCT_PACKAGES += \
