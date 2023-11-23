@@ -47,12 +47,12 @@
              8 - Camera
              9 - Dialer -->
     <integer name="config_doubleTapDefault">1</integer>
-    <integer name="config_singleTapDefault">2</integer>
-    <integer name="config_drawVDefault">3</integer>
-    <integer name="config_drawODefault">8</integer>
-    <integer name="config_twoFingerSwipeDefault">5</integer>
-    <integer name="config_drawArrowLeftDefault">7</integer>
-    <integer name="config_drawArrowRightDefault">6</integer>
+    <integer name="config_singleTapDefault">0</integer>
+    <integer name="config_drawVDefault">0</integer>
+    <integer name="config_drawODefault">0</integer>
+    <integer name="config_twoFingerSwipeDefault">0</integer>
+    <integer name="config_drawArrowLeftDefault">0</integer>
+    <integer name="config_drawArrowRightDefault">0</integer>
 
     <!-- Whether to intercept inputs on screen off. -->
     <bool name="config_enableKeyHandler">true</bool>
