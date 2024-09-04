@@ -92,15 +92,11 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "s/\/my_product/\/product/" "${2}"
             ;;
-        system_ext/lib64/libwfdnative.so)
-            [ "$2" = "" ] && return 0
-            sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
-            ;;
         vendor/etc/libnfc-nci.conf)
             [ "$2" = "" ] && return 0
             sed -i "s/NFC_DEBUG_ENABLED=1/NFC_DEBUG_ENABLED=0/" "${2}"
             ;;
-        vendor/etc/libnfc-nxp.conf)
+        vendor/etc/libnfc-mtp-SN100.conf)
             [ "$2" = "" ] && return 0
             sed -i "/NXPLOG_\w\+_LOGLEVEL/ s/0x03/0x02/" "${2}"
             sed -i "s/NFC_DEBUG_ENABLED=1/NFC_DEBUG_ENABLED=0/" "${2}"
