@@ -92,10 +92,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
-
 # GPS
 LOC_HIDL_VERSION = 4.0
 
@@ -116,10 +112,6 @@ PRODUCT_PACKAGES += \
     init.oplus.sh \
     init.target.rc \
     ueventd.oplus.rc
-
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor
 
 # Lineage Health
 PRODUCT_PACKAGES += \
