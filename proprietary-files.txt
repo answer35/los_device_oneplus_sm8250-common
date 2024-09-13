@@ -499,6 +499,7 @@ vendor/lib64/libnetmgr_common.so
 vendor/lib64/libnetmgr_nr_fusion.so
 vendor/lib64/libnetmgr_rmnet_ext.so
 vendor/lib64/libnlnetmgr.so
+vendor/lib64/liboemnvbk_img_helper.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
@@ -736,6 +737,15 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
 # QCRIL
+odm/lib64/lib-virtual-modem-protos.so
+odm/lib64/libcommcenterfw.so
+odm/lib64/libcommcenterutils.so
+odm/lib64/libdmtp-protos-lite.so
+odm/lib64/libdmtpclient.so
+odm/lib64/vendor.oplus.hardware.appradio@1.0.so
+odm/lib64/vendor.oplus.hardware.communicationcenter_compat@1.0.so
+odm/lib64/vendor.oplus.hardware.ims@1.0.so
+odm/lib64/vendor.oplus.hardware.radio@1.0.so
 vendor/bin/hw/qcrild
 vendor/bin/qtigetprop
 vendor/bin/qtisetprop
@@ -819,6 +829,7 @@ vendor/etc/init/qmipriod.rc
 vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/lib/libidl.so
 vendor/lib/libmdmdetect.so
+vendor/lib/liboemnvbk_img_helper.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqmi.so
 vendor/lib/libqmi_cci.so
@@ -858,6 +869,7 @@ vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
+vendor/lib64/libsecureui.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
 # QTEE
@@ -889,14 +901,14 @@ vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
 # SecureMSM (GPQESE)
-vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
-vendor/bin/hw/vendor.qti.secure_element@1.2-service
-vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
-vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
-vendor/lib64/android.hardware.secure_element@1.0-impl.so
-vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/vendor.qti.esepowermanager@1.1.so
+odm/bin/hw/vendor.qti.esepowermanager@1.1-service
+odm/bin/hw/vendor.qti.secure_element@1.2-service
+odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc
+odm/etc/init/vendor.qti.secure_element@1.2-service.rc
+odm/lib64/android.hardware.secure_element@1.0-impl.so
+odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
+odm/lib64/vendor.qti.esepowermanager@1.0.so
+odm/lib64/vendor.qti.esepowermanager@1.1.so
 
 # SecureMSM
 vendor/bin/hdcp1prov
@@ -2071,7 +2083,7 @@ odm/firmware/wentai24k_rtp.bin|00ea6a6ed43a0619cef4a48c538450a2893821df
 # VPP
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
-vendor/etc/init/vppservice.rc
+vendor/etc/init/vppservice_osie_sr.rc
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
@@ -2082,6 +2094,7 @@ vendor/lib64/libvpptestutils.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
+vendor/lib64/vendor.qti.hardware.vpp@1.4.so
 
 # Widevine DRM - OOS
 odm/bin/hw/android.hardware.drm@1.3-service.widevine|6c18708482d4e09553bd6cf3bcfaf10e9c4bb4a4
